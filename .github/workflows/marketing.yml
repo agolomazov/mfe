@@ -1,4 +1,4 @@
-name: deploy-container
+name: deploy-marketing
 
 on:
   push:
@@ -6,11 +6,11 @@ on:
       - main
       - master
     paths:
-      - 'packages/container/**'
+      - 'packages/marketing/**'
 
 defaults:
   run:
-    working-directory: packages/container
+    working-directory: packages/marketing
 
 jobs:
   build:
